@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dev-setup-wizard name="fuin-dev-setup">
+    <tasks>
+        <set-personal-data/>
+        <set-hostname/>
+        <create-git-config push-default="SIMPLE"/>
+        <generate-ssh-key id="1" host="github.com"/>
+        <display-ssh-key id="1" ref="generate-ssh-key[1]"/>
+        <git-clone id="1" target-dir="~/git">
+            <repository>git@github.com:fuinorg/utils4j.git</repository>
+        </git-clone>
+        <create-maven-settings template="~/git/fuin-dev-setup/project/settings.xml"/>
+    </tasks>
+</dev-setup-wizard>
