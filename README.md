@@ -8,8 +8,8 @@ It's based on a VMWare or VirtualBox VM environment that is customized with your
 This allows an easy development setup in a short amount of time and it does not pollute your main operating system.
 
 ## Requirements
-* **Minimal** - Intel Core i5, 8 GB RAM, 128 GB SSD
-* **Recommended** - Intel Core i7, 16 GB RAM, 256 GB SSD
+* **Minimal:** Intel Core i5, 8 GB RAM, 128 GB SSD
+* **Recommended:** Intel Core i7, 16 GB RAM, 256 GB SSD
 
 ## Getting started
 Provides step-by-step instructions that guide you through the installation process. 
