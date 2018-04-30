@@ -16,7 +16,8 @@ Provides step-by-step instructions that guide you through the installation proce
    * Open the File Manager and in the properties of the file select "Permissions / Access Control / Execute: Only Owner)" 
 4. Run './bootstrap.sh" and follow the instructions
    * Open a terminal with CTRL+ALT+T and type "./bootstrap.sh" followed by ENTER
-   * The Installation UI will show up
+   * The installation UI will show up
+   * When the UI is closed, you need to enter your "developer" password once at the console for some "sudo" operations (It's "developer" if you haven't changed it) 
 
 When everything is successfully installed, a fresh Eclipse JEE installation with the initial [utils4j](https://github.com/fuinorg/utils4j) project should show up.
 
