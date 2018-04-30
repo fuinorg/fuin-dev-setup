@@ -11,10 +11,10 @@ sshPrvKey=""
 
 if [[ -z "$sshPrvKey" ]]; then
     echo "Bootstrapping from public repository"
-    fullRepoUrl=https://$gitRepo/$gitUser/$gitRepo.git
+    fullRepoUrl=https://$gitHost/$gitUser/$gitRepo.git
 else
     echo "Bootstrapping from private repository"
-    fullRepoUrl=git@$gitRepo:$gitUser/$gitRepo.git
+    fullRepoUrl=git@$gitHost:$gitUser/$gitRepo.git
 
     # Define dependent variables
     sshDir=~/.ssh
