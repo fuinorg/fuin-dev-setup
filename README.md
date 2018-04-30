@@ -1,5 +1,5 @@
 # fuin-dev-setup
-Developer setup for projects at fuin.org
+## Developer setup for projects at fuin.org (VM based with Eclipse)
 
 ## Description
 You want to try out some of the projects from this repository? Or want to commit some code?
