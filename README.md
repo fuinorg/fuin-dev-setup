@@ -1,11 +1,16 @@
 # fuin-dev-setup
-## Developer setup for projects at fuin.org (VM based with Eclipse)
+**Developer setup for projects at fuin.org (VM based with Eclipse)**
 
 ## Description
 You want to try out some of the projects from this repository? Or want to commit some code?
 This respository provides an easy way to setup an Eclipse based environment with all necessary settings like "file encoding", "tab policy", "formatting" or Checkstyle configuration.
 It's based on a VMWare or VirtualBox VM environment that is customized with your own user credentials and settings using a simple GUI application.
 This allows an easy development setup in a short amount of time and it does not pollute your main operating system.
+
+## Requirements
+PC with Intel Core i5, 8 GB RAM, 128 GB SSD
+
+Recommended: Core i7, 16 GB RAM, 256 GB SSD)
 
 ## Getting started
 Provides step-by-step instructions that guide you through the installation process. 
