@@ -11,8 +11,10 @@ sshPrvKey=""
 
 if [[ -z "$sshPrvKey" ]]; then
     echo "Bootstrapping from public repository"
+    fullRepoUrl=https://$gitRepo/$gitUser/$gitRepo.git
 else
     echo "Bootstrapping from private repository"
+    fullRepoUrl=git@$gitRepo:$gitUser/$gitRepo.git
 
     # Define dependent variables
     sshDir=~/.ssh
@@ -40,8 +42,8 @@ mkdir -p ~/git
 cd ~/git
 
 # Clone the repo
-echo "Start cloning from git@$gitRepo:$gitUser/$gitRepo.git"
-git clone git@$gitRepo:$gitUser/$gitRepo.git
+echo "Start cloning from $fullRepoUrl"
+git clone $fullRepoUrl
 
 # Start installation
 cd $gitRepo/project
