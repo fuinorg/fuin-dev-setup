@@ -12,8 +12,11 @@ Provides step-by-step instructions that guide you through the installation proce
 
 1. Download the [lubuntu-developer-vm](https://github.com/fuinorg/lubuntu-developer-vm)
 2. Start the virtual machine and login with the credentials from [lubuntu-developer-vm](https://github.com/fuinorg/lubuntu-developer-vm)
-3. Inside the Developer VM download [bootstrap.sh](https://github.com/fuinorg/fuin-dev-setup/blob/master/bootstrap.sh) to your home directory and make it executable
+3. Inside the Developer VM save [bootstrap.sh](https://raw.githubusercontent.com/fuinorg/fuin-dev-setup/master/bootstrap.sh) to your home directory and make it executable
+   * Open the File Manager and in the properties of the file select "Permissions / Access Control / Execute: Only Owner)" 
 4. Run './bootstrap.sh" and follow the instructions
+   * Open a terminal with CTRL+ALT+T and type "./bootstrap.sh" followed by ENTER
+   * The Installation UI will show up
 
 When everything is successfully installed, a fresh Eclipse JEE installation with the initial [utils4j](https://github.com/fuinorg/utils4j) project should show up.
 
