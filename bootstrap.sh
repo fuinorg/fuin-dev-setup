@@ -45,6 +45,11 @@ cd ~/git
 echo "Start cloning from $fullRepoUrl"
 git clone $fullRepoUrl
 
+# Remove temporary config file
+if [ -f $sshConfigFile ] ; then
+    rm $sshConfigFile
+fi
+
 # Start installation
 cd $gitRepo/project
 chmod +x setup.sh
