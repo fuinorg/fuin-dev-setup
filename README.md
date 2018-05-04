@@ -33,5 +33,4 @@ When everything is successfully installed, a fresh Eclipse JEE installation with
 Purpose of the main files in this directory
 
 * [bootstrap.sh](bootstrap.sh) - Shell script that is used to bootstrap the installation process (Includes cloning of this directory) 
-* [checkstyle-fuin-org.xml](checkstyle-fuin-org.xml) - Current Checkstyle configuration used for all projects
 * [eclipse-format-fuin-org.xml](eclipse-format-fuin-org.xml) - Current Eclipse formatter configuration used for all projects
