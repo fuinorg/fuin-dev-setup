@@ -25,7 +25,9 @@ Provides step-by-step instructions that guide you through the installation proce
 
 When everything is successfully installed, a fresh Eclipse JEE installation with the initial [utils4j](https://github.com/fuinorg/utils4j) project should show up.
 
-**Tip:** Set your date/time zone using ```timedatectl set-timezone "Europe/Berlin"``` (Logout+Login required to see changed clock)
+**Tip:** Set your date/time zone 
+```timedatectl set-timezone "Europe/Berlin"```
+(Logout+Login required to see changed clock)
 
 ## Files
 Purpose of the main files in this directory
