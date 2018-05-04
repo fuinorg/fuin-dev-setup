@@ -30,7 +30,7 @@ else
     chmod 600 $sshPrvKeyFile
 
     # Adds new SSH keys to config
-    echo "Host $gitRepo" >> $sshConfigFile
+    echo "Host $gitHost" >> $sshConfigFile
     echo "    User git" >> $sshConfigFile
     echo "    HostName $gitHost" >> $sshConfigFile
     echo "    IdentityFile $sshPrvKeyFile" >> $sshConfigFile
