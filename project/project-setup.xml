@@ -9,6 +9,6 @@
         <git-clone id="1" target-dir="~/git">
             <repository>git@github.com:fuinorg/utils4j.git</repository>
         </git-clone>
-        <create-maven-settings template="~/git/fuin-dev-setup/project/settings.xml"/>
+        <create-maven-settings template="~/git/fuin-dev-setup/project/settings.xml" skip-credentials="true"/>
     </tasks>
 </dev-setup-wizard>
