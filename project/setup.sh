@@ -7,9 +7,14 @@ projectDir="$(dirname "$PWD")"
 # Basic Setup
 mvn exec:java
 
+# Update
+export DEBIAN_FRONTEND=noninteractive
+export DEBIAN_PRIORITY=critical
+sudo -E apt-get -qy update
+sudo -E apt-get -qy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" upgrade
+sudo -E apt-get -qy autoclean
+
 # Install additional packages
-sudo apt-get update
-sudo apt-get upgrade
 sudo apt-get install gnome-screenshot
 sudo apt-get install gthumb
 sudo apt-get install evince
