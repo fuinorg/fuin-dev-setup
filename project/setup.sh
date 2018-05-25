@@ -8,7 +8,11 @@ projectDir="$(dirname "$PWD")"
 mvn exec:java
 
 # Install additional packages
+sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install gnome-screenshot
+sudo apt-get install gthumb
+sudo apt-get install evince
 
 # Install Eclipse
 eclipseInstDir=$HOME/eclipse-installer
