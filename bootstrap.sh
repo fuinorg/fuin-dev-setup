@@ -8,6 +8,8 @@ gitHost="github.com"
 gitUser="fuinorg"
 gitRepo="fuin-dev-setup"
 sshPrvKey=""
+sshDir=~/.ssh
+sshConfigFile=$sshDir/config
 
 if [[ -z "$sshPrvKey" ]]; then
     echo "Bootstrapping from public repository"
@@ -17,8 +19,6 @@ else
     fullRepoUrl=git@$gitHost:$gitUser/$gitRepo.git
 
     # Define dependent variables
-    sshDir=~/.ssh
-    sshConfigFile=$sshDir/config
     sshPrvKeyDir=$sshDir/$gitHost/$gitUser
     sshPrvKeyFile=$sshPrvKeyDir/$gitRepo
 
