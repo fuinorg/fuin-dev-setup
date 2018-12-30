@@ -31,9 +31,9 @@
     </setupTask>
 
     <setupTask xsi:type="setup.p2:P2Task">
-        <requirement name="net.sf.eclipsecs.feature.group" versionRange="[8.5.0,9.0.0)" />
-        <requirement name="com.github.sevntu.checkstyle.checks.feature.feature.group" versionRange="[1.26.0,2.0.0)" />
-        <repository url="http://eclipse-cs.sf.net/update" />
+        <requirement name="net.sf.eclipsecs.feature.group" versionRange="[8.12.0,9.0.0)" />
+        <requirement name="com.github.sevntu.checkstyle.checks.feature.feature.group" versionRange="[1.32.0,2.0.0)" />
+        <repository url="https://checkstyle.org/eclipse-cs/update" />
         <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}
         </description>
     </setupTask>

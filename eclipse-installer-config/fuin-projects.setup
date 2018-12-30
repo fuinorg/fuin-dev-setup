@@ -25,7 +25,7 @@
             id="installation.location"
             type="FOLDER"
             name="installation.location"
-            value="${install.root|lower}/eclipse/oxygen-jee"
+            value="${install.root|lower}/eclipse/jee-2018-12"
             storageURI="scope://Installation"
             label="">
           <description></description>
@@ -35,7 +35,7 @@
             id="workspace.location"
             type="FOLDER"
             name="workspace.location"
-            value="${install.root|lower}/eclipse/oxygen-jee/ws"
+            value="${install.root|lower}/eclipse/jee-2018-12/ws"
             storageURI="scope://Installation"
             label="">
           <description></description>
@@ -44,10 +44,10 @@
         <setupTask 
             xsi:type="setup:VariableTask" 
             name="eclipse.target.platform" 
-            defaultValue="Oxygen" 
+            defaultValue="2018-12" 
             storageURI="scope://Workspace" 
             label="${scope.project.label} Target Platform">
-            <choice value="Oxygen" label="Eclipse Oxygen - 4.7" />
+            <choice value="2018-12" label="Eclipse 2018-12" />
             <choice value="None" label="None" />
             <description>Choose the compatibly level of the target platform for ${scope.project.label}</description>
         </setupTask>
@@ -69,8 +69,8 @@
     <setupTask xsi:type="setup.targlets:TargletTask">
         <targlet name="Eclipse Platform" activeRepositoryList="${eclipse.target.platform}">
             <repositoryList name="None" />
-            <repositoryList name="Oxygen">
-                <repository url="http://download.eclipse.org/eclipse/updates/4.7" />
+            <repositoryList name="2018-12">
+                <repository url="http://download.eclipse.org/eclipse/updates/4.10" />
             </repositoryList>
         </targlet>
     </setupTask>
