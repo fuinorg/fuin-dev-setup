@@ -128,7 +128,6 @@
                 <requirement name="org.sonatype.m2e.buildhelper.feature.feature.group"/>
                 <requirement name="org.sonatype.tycho.m2e.feature.feature.group"/>
 
-                <repository url="http://eclipse-cs.sourceforge.net/update"/>
                 <repository url="https://download.eclipse.org/technology/epp/packages/2018-12"/>
                 <repository url="https://download.eclipse.org/releases/2018-12"/>
                 <repository url="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.16.0"/>
