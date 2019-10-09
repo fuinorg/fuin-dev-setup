@@ -16,6 +16,11 @@ Provides step-by-step instructions that guide you through the installation proce
 
 1. Download the [lubuntu-developer-vm](https://github.com/fuinorg/lubuntu-developer-vm)
 2. Start the virtual machine and login with the credentials from [lubuntu-developer-vm](https://github.com/fuinorg/lubuntu-developer-vm)
+2. **WORKAROUND** Currently [OpenJFX-11 does not work with OpenJDK-8](https://bugs.launchpad.net/ubuntu/+source/openjfx/+bug/1799946)). To fix this you need to install a downgraded version of OpenJFX in the Lubuntu VM: 
+    ```
+    sudo apt install openjfx=8u161-b12-1ubuntu2 libopenjfx-java=8u161-b12-1ubuntu2 libopenjfx-jni=8u161-b12-1ubuntu2
+    sudo apt-mark hold openjfx libopenjfx-java libopenjfx-jni
+    ```
 3. Inside the Developer VM save [bootstrap.sh](https://raw.githubusercontent.com/fuinorg/fuin-dev-setup/master/bootstrap.sh) to your home directory and make it executable
    * Open the File Manager and in the properties of the file select "Permissions / Access Control / Execute: Only Owner)" 
 4. Run './bootstrap.sh" and follow the instructions
